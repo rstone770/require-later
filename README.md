@@ -32,8 +32,8 @@ The best example is for something like backbone.
 
 define([
 	'backbone',
-	'routes/home'
-,	'later!routes/admin',
+	'routes/home',	
+	'later!routes/admin'
 ], function(Backbone, homeRoute, adminRoute) {
 	var Router = Backbone.Router.extend({
 		routes: {
