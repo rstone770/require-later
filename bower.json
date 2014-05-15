@@ -1,0 +1,18 @@
+{
+  "name": "require-later",
+  "version": "0.0.0",
+  "authors": [
+    "Brenden Snyder <rstone770@gmail.com>"
+  ],
+  "description": "A lazy loader lib for async callbacks.",
+  "main": "bin/require-later.min.js",
+  "license": "MIT",
+  "homepage": "http://github.com/rstone770/require-later",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
