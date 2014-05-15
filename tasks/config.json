@@ -1,0 +1,39 @@
+{
+  "paths": {
+    "src"   : "src",
+    "spec"  : "spec",
+    "tasks" : "tasks"
+  },
+
+  "lint" : {
+    "paths": [
+      "src/**/*.js",
+      "tasks/**/*.js",
+      "spec/**/*.js"
+    ]
+  },
+
+  "spec": {
+    "paths": [
+      "spec/**/*-spec.js"
+    ]
+  },
+
+  "build": {
+    "deps": [
+      "lint",
+      "spec"
+    ],
+
+    "options": {
+      "standalone": "requirelater"
+    },
+
+    "main": "src/require-later.js",
+
+    "out": {
+      "dir": "bin",
+      "file": "require-later.min.js"
+    }
+  }
+}

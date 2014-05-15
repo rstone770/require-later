@@ -1,0 +1,32 @@
+{
+  "name": "require-later",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/require-later.js",
+  "scripts": {
+    "test": "gulp spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/rstone770/require-later"
+  },
+  "author": "Brenden Snyder <rstone770@gmail.com> (https://github.com/rstone770/gulp-amdclean)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rstone770/require-later/issues"
+  },
+  "homepage": "https://github.com/rstone770/require-later",
+  "devDependencies": {
+    "underscore": "^1.6.0",
+    "glob": "^3.2.9",
+    "gulp": "^3.6.2",
+    "requirejs": "^2.1.11",
+    "gulp-mocha": "^0.4.1",
+    "chai": "^1.9.1",
+    "gulp-jshint": "^1.5.5",
+    "map-stream": "^0.1.0",
+    "gulp-uglify": "^0.3.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-mustache": "^0.3.1"
+  }
+}
