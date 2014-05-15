@@ -17,7 +17,7 @@ describe('require-later', function() {
     delete GLOBAL.__DEFERRED;
   });
   
-  it('should return a deferred function.', function(done) {
+  it('should return a function.', function(done) {
     requirejs([
       'src/require-later!require-later-fixture',
     ], function(deferred) {
@@ -31,9 +31,11 @@ describe('require-later', function() {
     requirejs([
       'src/require-later!require-later-fixture'
     ], function(deferred) {
+      GLOBAL.should.not.have.property('__INCLUDED');
       GLOBAL.should.not.have.property('__DEFERRED');
 
       deferred(null, function() {
+        GLOBAL.should.have.property('__INCLUDED');
         GLOBAL.should.have.property('__DEFERRED');
         
         done();
