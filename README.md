@@ -47,7 +47,7 @@ define([
 
 ```
 
-TL;DR homeRoute will load all its dependencies regardless if they aree used. adminRoute will only load its dependencies if actually called.
+TL;DR homeRoute will load all its dependencies regardless if they are used. adminRoute will only load its dependencies if actually called.
 
 As you can see when home is required, it will become recursive and require all of its resources and its dependants. If not compiled, it will require a bunch of ajax calls for things a user may or may not use. If compiled, an app can quickly become very large when including modules and libraries that a very small subset of your users will use. The adminRoute will not load anything until the callback is actually called, then it will require routes/admin and evaluate it with any passed arguments.
 
